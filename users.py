@@ -1,4 +1,4 @@
-# ,e,e
+
 def add_user(users):
     name = input("Enter a name: ")
     try:
@@ -61,3 +61,10 @@ def statistics(users):
             
     else:
          print("Database is empty")
+         
+def count_adults(users):
+    c = 0
+    for i in users:
+        if i['age'] >= 18:
+            c += 1
+    return c
