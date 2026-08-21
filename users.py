@@ -4,7 +4,7 @@ def add_user(users):
     try:
         ag = int(input("Enter an age: "))
     
-        print("Enter a number!")
+         
         dic = {}
         dic["name"] = name
         dic["age"] = ag
