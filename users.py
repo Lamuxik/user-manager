@@ -1,4 +1,4 @@
-#popa
+ 
 def add_user(users):
     name = input("Enter a name: ")
     try:
@@ -77,4 +77,9 @@ def find_by_age(users):
             agl.append(i)
     for u in agl:
         print(u["name"], "-", u["age"])
-            
+        
+
+def find_adults(users):
+    for i in users:
+        if i["age"] >= 18:
+            print(i["name"], "-", i["age"])
