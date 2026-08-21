@@ -68,3 +68,13 @@ def count_adults(users):
         if i['age'] >= 18:
             c += 1
     return c
+
+def find_by_age(users):
+    agl = []
+    ag = int(input("Enter an age: "))
+    for i in users:
+        if i["age"] == ag:
+            agl.append(i)
+    for u in agl:
+        print(u["name"], "-", u["age"])
+            
